@@ -15,7 +15,9 @@ const WebScan = ({ active }) => {
       }
     });
   };
-  console.log(selectedAttacks);
+  const handleScane = ()=>{
+    console.log(selectedAttacks);
+  }
   return (
     <div className={`${active === 'web' ? 'opacity-100 flex' : 'opacity-0 hidden'} flex-col justify-center rounded-lg shadow-lg items-center h-full  w-full`}>
       <div className='mx-20 mt-20  bg-white h-full w-full'>
@@ -52,16 +54,16 @@ const WebScan = ({ active }) => {
           </div>
         </div>
       </div>
-      <div className='w-[80%] h-full px-10 rounded-lg mt-4 flex flex-col justify-center items-center'>
+      <div className='w-[95%] sm:w-[80%] h-full px-10 rounded-lg mt-4 flex flex-col justify-center items-center'>
         <div className='flex flex-col space-y-5'>
         <label htmlFor="inputField" className="text-lg font-semibold mb-2 text-[#EF454B]">Target Url</label>
         <input
           type="text"
           id="inputField"
-          className="border  w-[600px] rounded-md px-3 py-2 focus:outline-none "
+          className="border w-full  sm:w-[600px] rounded-md px-3 py-2 focus:outline-none "
           placeholder="http://www.example.com"
         />
-        <button className='px-4 py-2 bg-yellow-400 rounded-lg  hover:bg-yellow-500 transition-all duration-200 ease-in-out'>Start Scanning</button>
+        <button onClick={handleScane} className='px-4 py-2 bg-yellow-400 rounded-lg  hover:bg-yellow-500 transition-all duration-200 ease-in-out'>Start Scanning</button>
         </div>
       </div>
 
