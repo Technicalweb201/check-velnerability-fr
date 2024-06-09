@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Scanresponse from '../model/response';
 import ScanLoader from './ScanLoader';
 
-const attackNames1 = ['SQL Injection', 'Server Misconfig', 'Broken Access', 'Broken Authentication'];
+const attackNames1 = ['SQL Injection', 'XSS', 'Server Misconfig', 'Broken Access', 'Broken Authentication'];
 const attackNames2 = ['Insecure Design', 'Cryptographic Failures', 'Integrity Failures', 'Authentication Failures'];
 
 const WebScan = ({ active }) => {
