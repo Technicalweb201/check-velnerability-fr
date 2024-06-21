@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className={`sticky top-0 h-[60px] w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-2 sm:px-20 flex flex-row justify-between items-center  z-50 transition-all duration-300 ${isScrolled ? 'backdrop-blur-md shadow-lg' : 'bg-opacity-20'}`}>
       <div>
-        <h1 className='text-2xl font-extrabold tracking-wide drop-shadow-lg text-white'>Scan Web</h1>
+        <h1 className='text-2xl font-extrabold tracking-wide drop-shadow-lg text-white'>Vulnpredator</h1>
       </div>
       <div className='flex flex-row justify-center items-center space-x-10'>
         <div className='relative group '>
